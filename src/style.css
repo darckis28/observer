@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #222;
+  gap: 1rem;
+  padding-top: 50px;
+  img {
+    width: 200px;
+    opacity: 0;
+  }
+  .show {
+    animation: spin 500ms ease-in;
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
